@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "mtn-landing-page-club-0803-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/mtnLandingPageClub0803/MtnLandingPageClub0803WebPart.js",
+          "manifest": "./src/webparts/mtnLandingPageClub0803/MtnLandingPageClub0803WebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MtnLandingPageClub0803WebPartStrings": "lib/webparts/mtnLandingPageClub0803/loc/{locale}.js"
+  }
+}
