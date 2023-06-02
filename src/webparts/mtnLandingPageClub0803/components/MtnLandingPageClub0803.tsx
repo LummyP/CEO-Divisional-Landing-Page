@@ -1,24 +1,26 @@
 import * as React from 'react';
-import styles from './MtnLandingPageClub0803.module.scss';
+import "../components/global.scss"
 import { IMtnLandingPageClub0803Props } from './IMtnLandingPageClub0803Props';
 import { escape } from '@microsoft/sp-lodash-subset';
 import * as jQuery from "jquery";
 
 export default class MtnLandingPageClub0803 extends React.Component<IMtnLandingPageClub0803Props, {}> {
   public render(): React.ReactElement<IMtnLandingPageClub0803Props> {
+     jQuery("#workbenchPageContent").prop("style", "max-width: none"); jQuery(".SPCanvas-canvas").prop("style", "max-width: none"); jQuery(".CanvasZone").prop("style", "max-width: none");
     return (
-      <div className={ styles.mtnLandingPageClub0803 }>
-        <div className={ styles.container }>
-          <div className={ styles.row }>
-            <div className={ styles.column }>
-              {/* <span className={ styles.title }>Welcome to SharePoint!</span>
-              <p className={ styles.subTitle }>Customize SharePoint experiences using Web Parts.</p>
-              <p className={ styles.description }>{escape(this.props.description)}</p>
-              <a href="https://aka.ms/spfx" className={ styles.button }>
-                <span className={ styles.label }>Learn more</span>
-              </a> */}
-            </div>
+      <div className="mainContainer">
+        <div className='Container'>
+          <div className='Picture'>
+            <h4>John Doe</h4>
+            <h5>Chief Finance Officer(CFO)</h5>
           </div>
+        </div>
+        <div className='contentRight'>
+          <h3>Welcme To</h3>
+          <h3>Division One</h3>
+          <p>Dear all, mtn Nigeria will be having her 20th</p>
+          <p>celebration in a week time, kindly make you</p>
+          <p>for this special event. Dear all,</p>
         </div>
       </div>
     );

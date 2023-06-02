@@ -1,3 +1,71 @@
-.container{
-    background: require('./Assets/Club0803Image.png');
+// @import url("https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap");
+
+// @font-face {
+//   font-family: "MTNBrighterSans-Medium";
+//   src: url("https://lotusbetaanalytics.sharepoint.com/sites/LandingPage/Fonts/MTNBrighterSans-Medium.eot");
+//   src: url("https://lotusbetaanalytics.sharepoint.com/sites/LandingPage/Fonts/MTNBrighterSans-Medium.woff")
+//     format("woff");
+// }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mainContainer{
+    background-color: white;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+}
+
+.Container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.Picture{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: url('../components/Assets/Handsome\ and\ sensitive\ man\ portrait.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex: 0.5;
+    justify-content: flex-end;
+    overflow: hidden;
+    img{
+        width: 50px;
+        height: 50px;
+    }
+    h4{
+        color: white;
+        padding-left: 2rem;
+    }
+    h5{
+        color: white;
+        padding-left: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    
+}
+
+.contentRight{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3{
+        color: yellow;
+        font-size: 3rem;
+    }
+    p{
+        padding-top: 1rem;
+    }
 }
